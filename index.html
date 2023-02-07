@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--title heading -->
+    <div class="title-heading">
+      <img src="logo.png" id="logo">
+      <h1>Todo List App</h1>
+    </div>
+
+    <div id="container">
+      <input placeholder="Add your task" class="add-task" id="add" />
+      <button id="add-task-btn" for="add">Add</button>
+      
+      <!-- Task-list -->
+      <ul id="task-list">
+         <!-- <li>
+
+              </li>  -->
+      </ul>
+
+      <!-- task count -->
+      <span id="total-tasks">Tasks left : <span id="tasks-counter">0</span></span>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
