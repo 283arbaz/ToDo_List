@@ -128,9 +128,10 @@
     cursor: pointer;
     font-size: larger;
   }
-
+   /**label style after task checked**/
   #task-list input:checked + label{
-    font-weight: 700;
+    color: gray;
+    text-decoration: line-through;
   }
 
   #task-list label:before {
