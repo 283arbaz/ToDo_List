@@ -30,6 +30,9 @@ function markTaskAsComplete(taskId){
         const currentTask = Task[0];
 
         currentTask.done = !currentTask.done;
+        if(currentTask.done==true){
+            showNotification('Task accomplished successfully!');
+        }
         renderList();
         return;
     }
@@ -102,6 +105,10 @@ function handleClickListener(e){
     }
         TaskInput.value="";
         addTask(task);
+    }else if(target.id=='clear-task-btn'){
+        tasks.splice(0, tasks.length);
+        showNotification('All Tasks Removed!');
+        renderList();
     }
 }
 
